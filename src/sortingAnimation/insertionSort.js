@@ -1,4 +1,4 @@
-import { getInsertionSortAnimationsArray } from "../sortingAlgorithms/insertionSort";
+import { getInsertionSortAnimationsArray } from "../helpers/sortAlgorithm";
 import { sortedGreen } from "../helpers/sortedGreen";
 
 export function runInsertionSortAnimations(

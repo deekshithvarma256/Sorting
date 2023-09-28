@@ -1,4 +1,4 @@
-import { getMergeSortAnimationsArray } from "../sortingAlgorithms/mergeSort";
+import { getMergeSortAnimationsArray } from "../helpers/sortAlgorithm";
 import { sortedGreen } from "../helpers/sortedGreen";
 
 export function runMergeSortAnimations(

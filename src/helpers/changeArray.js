@@ -12,12 +12,12 @@ export function changeArrayHelper(
   setIsSorted(false);
   const arr = [];
   for (let i = 0; i < size; i++) {
-    arr.push(randomNoGenerator(5, 630));
+    arr.push(randomNoGenerator(5, 300));
   }
   setArray(arr);
   setCopiedArray([...arr]);
   setSameArray([...arr]);
-  setWidth(920 / arr.length);
+  setWidth(920 / (arr.length));
   const arrayBars = document.getElementsByClassName("array-bar");
   for (let i = 0; i < array.length; i++) {
     arrayBars[i].style.backgroundColor = "purple";

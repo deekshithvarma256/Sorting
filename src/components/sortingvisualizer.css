@@ -13,7 +13,9 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  height: 635px;
+  height: 400px;
+  width: 50vw;
+  margin:auto;
   border-bottom: 1px solid grey;
 }
 .button-container {
@@ -24,6 +26,7 @@
 .form-range {
   width: 300px;
   transform: translate(0, 14px);
+  display:block;
 }
 .form-label {
   transform: translate(0, 7px);

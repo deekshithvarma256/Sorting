@@ -13,18 +13,27 @@ export default function ButtonControl({
   isSorted,
 }) {
   return (
+    <>
     <div className="button-container">
-      <div>
-        <a href="/" className="btn stop me-2">
-          Stop (Refresh)
-        </a>
-      </div>
+    <input
+          type="number"
+          id="shade"
+          name="shade"
+          min="10"
+          max="150"
+          className="form-range ms-3"
+          onChange={changeArraySize}
+          disabled={isPlaying}
+        />
+      <button className="btn stop m-2">
+          Generate
+        </button>
       <button
         className={`btn m-2 ${isSorted ? "btn-sec" : "btn-danger"}`}
         onClick={resetArray}
         disabled={isPlaying || (!isSorted && !isPlaying)}
       >
-        Reset to Same Array
+        Reset
       </button>
       <button
         className={`btn m-2 ${
@@ -33,7 +42,7 @@ export default function ButtonControl({
         onClick={insertionSort}
         disabled={isPlaying || isSorted}
       >
-        Insertion Sort
+        Insertion
       </button>
       <button
         className={`btn m-2 ${
@@ -42,7 +51,7 @@ export default function ButtonControl({
         onClick={quickSort}
         disabled={isPlaying || isSorted}
       >
-        Quick Sort
+        Quick
       </button>
       <button
         className={`btn m-2 ${
@@ -51,7 +60,7 @@ export default function ButtonControl({
         onClick={mergeSort}
         disabled={isPlaying || isSorted}
       >
-        Merge Sort
+        Merge
       </button>
       <button
         className={`btn m-2 ${
@@ -60,7 +69,7 @@ export default function ButtonControl({
         onClick={heapSort}
         disabled={isPlaying || isSorted}
       >
-        Heap Sort
+        Heap
       </button>
       <button
         className={`btn m-2 ${
@@ -69,23 +78,13 @@ export default function ButtonControl({
         onClick={bubbleSort}
         disabled={isPlaying || isSorted}
       >
-        Bubble Sort
+        Bubble
       </button>
       <div className="ms-4">
         <label for="shade" className="form-label mt-2">
           Size {size}
         </label>
-        <input
-          type="range"
-          id="shade"
-          name="shade"
-          min="10"
-          max="500"
-          className="form-range ms-3"
-          onChange={changeArraySize}
-          disabled={isPlaying}
-        />
       </div>
-    </div>
+    </div></>
   );
 }

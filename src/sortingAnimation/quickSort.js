@@ -1,4 +1,4 @@
-import { getQuickSortAnimationsArray } from "../sortingAlgorithms/quickSort";
+import { getQuickSortAnimationsArray } from "../helpers/sortAlgorithm";
 import { sortedGreen } from "../helpers/sortedGreen";
 
 export function runQuickSortAnimations(

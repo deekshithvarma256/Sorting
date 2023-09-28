@@ -1,4 +1,4 @@
-import { getBubbleSortAnimationsArray } from "../sortingAlgorithms/bubbleSort";
+import { getBubbleSortAnimationsArray } from "../helpers/sortAlgorithm";
 import { sortedGreen } from "../helpers/sortedGreen";
 
 export function runBubbleSortAnimations(

@@ -1,4 +1,4 @@
-import { getHeapSortAnimationsArray } from "../sortingAlgorithms/heapSort";
+import { getHeapSortAnimationsArray } from "../helpers/sortAlgorithm";
 import { sortedGreen } from "../helpers/sortedGreen";
 
 export function runHeapSortAnimations(
